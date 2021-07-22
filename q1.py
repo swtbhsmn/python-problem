@@ -35,7 +35,7 @@ def cursor_iter(cursor):
             yield row
 
 def main():
-    with MySQLConnection(hostname="localhost",user="admin",password="Swetabh1@",database="employees",port=3306) as db: # utilize db Create cursor
+    with MySQLConnection(hostname="localhost",user="admin",password="****",database="employees",port=3306) as db: # utilize db Create cursor
         pointer = db.connection.cursor()
         query = """SELECT * FROM employees.employees"""
         pointer.execute(query)
