@@ -40,9 +40,11 @@ def main():
         query = """SELECT * FROM employees.employees"""
         pointer.execute(query)
         gen = cursor_iter(pointer)
-        for _ in range(10):
-            print(next(gen))
+        return gen
+      
         
 
 if __name__ == '__main__':
-     main()
+    gen_result = main()
+    for _ in range(10):
+        print(next(gen_result))

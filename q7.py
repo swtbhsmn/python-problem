@@ -4,8 +4,10 @@
 
 import re
 
-email_address = "username@companyname.com"
+def split_string():
+    email_address = "username@companyname.com"
+    split_email_address = re.split('\@|\.',email_address)
+    #split_email_address -> ['username', 'companyname', 'com']
+    return split_email_address[1] #['username', 'companyname', 'com']
 
-split_email_address = re.split('\@|\.',email_address)
-
-print(split_email_address) #['username', 'companyname', 'com']
+print(split_string())

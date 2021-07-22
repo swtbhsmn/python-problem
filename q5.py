@@ -16,5 +16,7 @@ def binary_Search(sorted_list,find_element):
             end   = middle -1
     return "Not Found!"
 
-find_number = int(input("Enter number for search it's index:"))
-print(binary_Search(sorted_list_value,find_number))
+    
+if __name__ == "__main__":
+    find_number = int(input("Enter number for search it's index:"))
+    print(binary_Search(sorted_list_value,find_number))

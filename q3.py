@@ -12,7 +12,7 @@ def remove_duplicate(lists):
             unique_numbers.add( item )
             update_list.append(item)
 
-    print(unique_numbers) # {35, 12, 155, 24, 88, 120}
+    #print(unique_numbers) # {35, 12, 155, 24, 88, 120}
     return update_list    # [12, 24, 35, 88, 120, 155]
 
 print(remove_duplicate(list_value))
